@@ -8,7 +8,7 @@ async payment(req,res){
     stripe.charges.create({
         source:req.body.tokenId,
         amount:req.body.amount,
-        description:"payment for makeyouup",
+        description:"payment for cosmetify",
         currency:"inr"
     },(stripeErr,stripeRes)=>{
         if(stripeErr)
